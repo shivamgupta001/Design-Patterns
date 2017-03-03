@@ -1,3 +1,6 @@
+// -----MIXIN PATTERN----//
+
+//Mixins are classes which provide the functionality to be inherited by a subclass
 
 //Car
 var Car = function( settings ){
@@ -41,3 +44,7 @@ var vehicle = new Car({model : 'Ford Escort',color: 'blue'});
 
 vehicle.driveForward();
 vehicle.driveBackward();
+
+/*Note- The mixed in class prototype members are mirrored on receiving class prototype,
+		instances of the receiving class do not pass instanceOf for the mixin class.
+		JS does not support multiple inheritance.*/
